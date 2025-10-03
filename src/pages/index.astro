@@ -1,12 +1,17 @@
 ---
-import Layout from "../layouts/layout.astro";
+import Layout from "@/layouts/layout.astro";
+import bg from '@/assets/bg_home.jpg'
 ---
 
 
-<Layout title="Inicio">
-    <h1 class="text-6xl">Inicio</h1>
-    <a href="/nosotros">Nosotros</a>
+<Layout title="Inicio"
+        subtitle="Disfruta una deliciosa taza de cafe"
+        bgImg={bg.src}>
 
+    <h1>Inicio</h1>
+    <section slot="after-main-content">
+        Promociones
+    </section>
 </Layout>
 
 
