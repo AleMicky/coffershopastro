@@ -1,3 +1,18 @@
-<footer>
-    <h2>footer</h2>
+---
+import FooterBox from "@/components/ui/FooterBox.astro";
+---
+<footer class="bg-coffee-900 pt-20">
+    <div class="max-w-7xl mx-auto mt-10 grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <FooterBox
+                heaning="Ubicacion"
+        />
+        <FooterBox
+                heaning="Reservacion"
+        />
+        <FooterBox
+                heaning="Horario"
+        />
+    </div>
+    <p class="py-10 text-center text-white text-sm">Todo los derechos reservadps. La Cafeteria 1939.
+        &copy; {new Date().getFullYear()}</p>
 </footer>
