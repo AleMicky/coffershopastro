@@ -3,15 +3,19 @@ import FooterBox from "@/components/ui/FooterBox.astro";
 ---
 <footer class="bg-coffee-900 pt-20">
     <div class="max-w-7xl mx-auto mt-10 grid grid-cols-1 lg:grid-cols-3 gap-5">
-        <FooterBox
-                heaning="Ubicacion"
-        />
-        <FooterBox
-                heaning="Reservacion"
-        />
-        <FooterBox
-                heaning="Horario"
-        />
+        <FooterBox heaning="Ubicacion">
+            <p>Coffe Street 39</p>
+            <p>Londres, UK</p>
+        </FooterBox>
+        <FooterBox heaning="Reservacion">
+            <p>Tel. 32423-4234</p>
+            <a href="tel:32423-4234">llamar</a>
+        </FooterBox>
+        <FooterBox heaning="Horario">
+            <p>Lu-Jue: 11:00 - 22:20</p>
+            <p>Vie-Sab: 09:00 - 24:20</p>
+            <p>Domingo: Cerrado</p>
+        </FooterBox>
     </div>
     <p class="py-10 text-center text-white text-sm">Todo los derechos reservadps. La Cafeteria 1939.
         &copy; {new Date().getFullYear()}</p>

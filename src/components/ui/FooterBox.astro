@@ -5,6 +5,9 @@ interface Props {
 const {heaning} = Astro.props;
 ---
 
-<div class="text-center">
+<div class="text-center space-y-5">
     <h3 class="text-coffee-400 text-2xl font-black uppercase">{heaning}</h3>
+    <div class="space-y-3 text-xl text-white">
+        <slot/>
+    </div>
 </div>
